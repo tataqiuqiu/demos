@@ -5,17 +5,17 @@ import Home from "./views/Home.vue";
 Vue.use(Router);
 
 export default new Router({
-  mode: "history",
-  // mode: "hash",
+  // mode: "history",
+  mode: "hash",
   base: process.env.BASE_URL,
   routes: [
     {
-      path: "./home",
+      path: "/home",
       name: "home",
       component: Home
     },
     {
-      path: "./about",
+      path: "/about",
       name: "about",
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
