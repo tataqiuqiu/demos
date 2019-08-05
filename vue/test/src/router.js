@@ -7,7 +7,10 @@ Vue.use(Router);
 export default new Router({
   mode: "history",
   // mode: "hash",
-  base: process.env.BASE_URL,
+  base:
+    process.env.NODE_ENV === "production"
+      ? "/demos/vue/test/dist"
+      : process.env.BASE_URL,
   routes: [
     {
       path: "/home",
