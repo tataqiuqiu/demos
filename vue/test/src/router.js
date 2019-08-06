@@ -9,7 +9,7 @@ export default new Router({
   mode: "hash",
   base:
     process.env.NODE_ENV === "production"
-      ? "/demos/vue/test/dist/#/"
+      ? "/demos/vue/test/dist/"
       : process.env.BASE_URL,
   routes: [
     {
