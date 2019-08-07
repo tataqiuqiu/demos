@@ -2,6 +2,7 @@ import Vue from "vue";
 import Router from "vue-router";
 import Home from "./views/Home.vue";
 import Bb from "./views/Bb.vue";
+import Bb2 from "./views/Bb.2.vue";
 
 Vue.use(Router);
 
@@ -31,6 +32,11 @@ export default new Router({
       path: "/bb",
       name: "bidirectional-bindings",
       component: Bb
+    },
+    {
+      path: "/bb2",
+      name: "bidirectional-bindings-2",
+      component: Bb2
     }
   ]
 });

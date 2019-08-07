@@ -1,6 +1,6 @@
 <template>
   <div>
-    <br />>
+    <br />
     <child :value.sync="doc"></child>
     <div>father： <input type="text" v-model="doc" /></div>
     <div>result： <span v-html="doc"></span></div>

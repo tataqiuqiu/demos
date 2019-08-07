@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: "Bb-child",
+  name: "Bb-child.2",
   props: {
     value: String
   },
@@ -20,7 +20,7 @@ export default {
   },
   methods: {
     iptInput() {
-      this.$emit("update:value", this.val);
+      this.$emit("input", this.val);
     }
   }
 };

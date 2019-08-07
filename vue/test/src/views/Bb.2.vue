@@ -1,26 +1,28 @@
 <template>
-  <div>child： <input type="text" v-model="val" @input="iptInput" /></div>
+  <div>
+    <br />
+    <child :value="doc" @input="oninput"></child>
+    <div>father： <input type="text" v-model="doc" /></div>
+    <div>result： <span v-html="doc"></span></div>
+  </div>
 </template>
 
 <script>
+import Child from "@/components/Bb-child.2.vue";
+
 export default {
-  name: "Bb-child",
-  props: {
-    value: String
+  name: "Bb",
+  components: {
+    Child
   },
   data() {
     return {
-      val: this.value
+      doc: "输入试试"
     };
   },
-  watch: {
-    value(newVal) {
-      this.val = newVal;
-    }
-  },
   methods: {
-    iptInput() {
-      this.$emit("update:value", this.val);
+    oninput(val) {
+      this.doc = val;
     }
   }
 };
@@ -48,5 +50,13 @@ input {
   outline: none;
   padding: 6px 8px;
   vertical-align: middle;
+}
+span {
+  float: right;
+  font-size: 16px;
+  width: 195px;
+  height: 20px;
+  padding: 0 8px;
+  text-align: left;
 }
 </style>
