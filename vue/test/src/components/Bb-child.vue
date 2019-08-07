@@ -1,7 +1,5 @@
 <template>
-  <div>
-    child： <input type="text" v-model="val" @input="iptInput" />
-  </div>
+  <div>child： <input type="text" v-model="val" @input="iptInput" /></div>
 </template>
 
 <script>
