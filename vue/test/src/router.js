@@ -1,8 +1,9 @@
 import Vue from "vue";
 import Router from "vue-router";
-import Home from "./views/Home.vue";
-import Bb from "./views/Bb.vue";
-import Bb2 from "./views/Bb.2.vue";
+import Home from "./views/Home";
+import Bb from "./views/Bb";
+import Bb2 from "./views/Bb.2";
+import Ellipsis from "./views/Ellipsis";
 
 Vue.use(Router);
 
@@ -37,6 +38,11 @@ export default new Router({
       path: "/bb2",
       name: "bidirectional-bindings-2",
       component: Bb2
+    },
+    {
+      path: "/2-line-ellipsis",
+      name: "2-line-ellipsis",
+      component: Ellipsis
     }
   ]
 });
