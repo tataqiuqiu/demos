@@ -1,5 +1,6 @@
 <template>
   <div
+    style="width: 260px;"
     class="lastline-space-ellipsis js-toggle-box"
     title="你让我只 fdkfjkdsjfdsj dfjdsfadf 5555555 aaaaaa 显示2行就只显示2行啊，你让我只显示2行就只显示2行啊，你让我只显示2行就只显示2行啊"
   >
