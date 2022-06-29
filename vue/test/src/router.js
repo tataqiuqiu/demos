@@ -4,6 +4,8 @@ import Home from "./views/Home";
 import Bb from "./views/Bb";
 import Bb2 from "./views/Bb.2";
 import Ellipsis from "./views/Ellipsis";
+import AppComponent from "./views/VueAppComponent";
+import AppComponent2 from "./views/VueAppComponent2";
 
 Vue.use(Router);
 
@@ -43,6 +45,16 @@ export default new Router({
       path: "/2-line-ellipsis",
       name: "2-line-ellipsis",
       component: Ellipsis
+    },
+    {
+      path: "/app-component",
+      name: "app-component",
+      component: AppComponent
+    },
+    {
+      path: "/app-component-2",
+      name: "app-component-2",
+      component: AppComponent2
     }
   ]
 });
